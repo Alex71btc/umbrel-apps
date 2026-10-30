@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: invoice-ninja
 category: finance
 name: Invoice Ninja
-version: "5.13.50"
+version: "5.13.51"
 tagline: We'll help with the invoicing
 description: >-
   Invoicing, Quotes, Expenses, Tasks.
@@ -21,10 +21,15 @@ gallery:
 - 3.jpg
 path: ''
 releaseNotes: >-
-  This update fixes scheduled tasks, recurring reminders, and the activity feed, and improves API reliability.
+  This update improves payment processing, invoice PDFs, and sign-in:
+
+  - Fixes Apple sign-in failures and adds automatic sign-in for configured OpenID Connect providers.
+  - Adds payment due dates to ZUGFeRD e-invoices and preserves external PDF links when page numbering is enabled.
+  - Improves Razorpay payment recording, GoCardless authorization, and Braintree payments.
+  - Fixes self-hosted app links opening the wrong address.
 
 
-  Full release notes are available at https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.50
+  Full release notes are available at https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.51
 deterministicPassword: true
 defaultUsername: admin@example.com
 submitter: Umbrel
