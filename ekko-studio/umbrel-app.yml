@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: ai
 name: Ekko Studio
-version: "0.8.0"
+version: "0.8.1"
 tagline: Manage your AI agent from your browser
 description: >-
   Ekko Studio is a browser workspace for AI agents, with conversations, file tools, persistent memory, skills, and model settings. It includes both the Ekko and Hermes runtimes so you can choose an agent for each conversation.
@@ -21,13 +21,16 @@ description: >-
 
   This package provides the browser interface. Native-app cloud connectivity, peer-to-peer connections, and preview-server ports are not exposed. Optional subscription sign-in requires approval with the provider; API-key setup is available in the browser.
 releaseNotes: >-
-  This update adds personal assistant bots with separate conversations, shared account memory, background tasks, scheduled plans, and multi-agent collaboration.
+  This update fixes missing, duplicate, out-of-order, and stuck messages when sending several messages to a personal assistant. Queued messages now retain their order after refreshing.
 
 
-  You can now manually mark conversation tasks as unfinished, completed, or closed. It also improves provider compatibility, restores available agent choices for regular users in group chats and workflows, and fixes conversation isolation when switching between personal assistants and regular chats.
+  Follow-up requests and feedback now continue the original task and conversation. Reconnecting restores active assistant status, pending approvals, and clarification requests, while expired reminders are removed.
 
 
-  Full release notes can be found at https://github.com/EKKOLearnAI/ekko-studio/releases/tag/v0.8.0
+  Built-in browser automation is less disruptive to your input, and concurrent browser profile saves no longer conflict.
+
+
+  Full release notes can be found at https://github.com/EKKOLearnAI/ekko-studio/releases/tag/v0.8.1
 developer: EKKOLearnAI
 website: https://github.com/EKKOLearnAI/ekko-studio
 dependencies: []

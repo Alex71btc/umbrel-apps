@@ -4,7 +4,7 @@ services:
       APP_HOST: ekko-studio_server_1
       APP_PORT: 6060
   server:
-    image: ekkoye8888/hermes-web-ui:v0.8.0@sha256:80e2e6dee9453a8d92dba7eebfae029ca9f8e3d3885c10b427561da57667355a
+    image: ekkoye8888/hermes-web-ui:v0.8.1@sha256:a0a3e74ba7f53f4af3388c19b78bc2bcb40e2e9d187682e7fc263921bbb5f734
     user: "1000:1000"
     init: true
     restart: on-failure
